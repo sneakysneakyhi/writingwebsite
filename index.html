@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Writing Website</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Baskerville', serif;
+            background-color: #fefefe;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Subtle Art Deco Background */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f7f7f7 25%, #e6e6e6 25%, #e6e6e6 50%, #f7f7f7 50%);
+            background-size: 20px 20px;
+            opacity: 0.6;
+            z-index: -1;
+        }
+
+        /* Center Container */
+        #password-container {
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #999;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 300px;
+            font-family: 'Futura', sans-serif;
+            margin-bottom: 15px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #555;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Futura', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        .title {
+            font-family: 'Copperplate', serif;
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .text-container {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 90%;
+            max-height: 80vh;
+            margin: 20px auto;
+            text-align: left;
+            white-space: pre-wrap;
+            display: none;
+            overflow: auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            animation: textWrite 3s steps(60) forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+
+        /* Media Queries for Mobile Compatibility */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            input[type="text"] {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="password-container">
+        <p id="prompt">Pretty please provide the password EK listed on her Instagram:</p>
+        <input type="text" id="password-input" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div class="title" id="title">Granny</div>
+    <div id="text-container" class="text-container">
+        <p>	The fans rattled as they moved hot air through the warehouse. Packed with spectators, sharp whistles bounced off the walls, slicing through the humidity of the tournament. The blue mat stuck to the bottoms of my feet. I squared up for the sparring match. My eyes wandered away from my opponent, though, and found Granny’s platinum blonde bob. My stomach twisted. She was sitting next to my dad, arms crossed, staring down at me through a pair of green and black sunglasses. 
+	It was the championship match. My opponent was nine, two years older than me. We were dressed in white doboks and padding with red targets on our chests. She bobbed up and down on her toes. Coach reminded me, ‘Hands up!’  I chewed on my mouthguard as my eyes moved between my opponent and Granny. 
+	The referee signaled for us to begin. The girl let out a way-cry. She darted across the mat and reared a decapitating roundhouse. I dodged. I drove an open palm onto the red dot on her chest. She shouted, stumbled, so I did it again. She traded blows with me. I felt the sting of copper in my mouth. I hit her even harder. Each time I punched she stumbled backward. I slammed my palms onto the red dot over and over until I knocked the wind out of her.  I didn’t notice if she was fighting back anymore. My frenzy blocked it out, and only stopped when I heard the whistle. My opponent had stepped off the mat. 
+	I won. It was the first time I had won anything. I looked at the crowd to see my dad cheering and clapping. Granny was stagnant. Her arms were crossed. 
+Granny brought a digital camera with her everywhere she went. When I was awarded my medal, she rapid-fired photos with the flash on. She admired them, saying how much I looked like my father, making me cringe. I didn’t like getting called mannish. But I didn’t dare show it. I had a vision that if I did, it would end with me digging my own grave on a patch of red dirt in the parking lot. 
+	She gave the camera to Dad. Granny gripped my shoulder as we took a few photos before pulling me aside next to a fan. One of its blades was banging against the cage around it. The breeze dried the sweat on my skin, causing goosebumps. 
+Granny towered above me as she said, “that wasn’t a hundred and ten percent, Miss Emma.” 
+	“A hundred and ten percent?”
+	“You didn’t give a hundred and ten percent of your effort.”
+	“But I won.”
+	“And?”
+	I held up the gold medal as a response, and repeated, “I won.”
+	“That wasn’t the best you could do.”
+	My heart stung.
+	‘Is she not proud of me?’ 
+	Granny sits at the peak of a mountain where the air is thin, but she doesn’t feel the difference. I can’t see her from the bottom; she’s obscured by a blizzard. She stayed away from my line of sight. But I felt her presence watching me with a close eye. 
+	When I was a kid, I found myself slipping away during family gatherings at her home. It was like a museum draped in stretches of black and white lining, dark masonry, and emerald ceilings. One wing held a hallway that was decorated with framed newspaper clippings of her and Grandad’s business. Her face was plastered underneath headlines all written along the same lines, but with different dates: ‘Most influential, charitable, entrepreneur in Oklahoma.’
+	At the end of this hallway was the living room. The room was lit by a wall of stained-glass windows that cast green, gold, and red light onto more photographs. The photographs covered all the walls from the floor to the ceiling. They ranged from black and white, grainy colored photos, and sharp saturated ones. I saw photos of her and Grandad from when they were young, when she had dark hair, and he was still a cherry blond. The centerpiece of the room was a massive painting of her grandchildren. I’ve never known her to take a photo down. She only adds to the collection.
+	I took mental notes of her clothes, her home, her sons and daughters, remarks about her past, and every word she’s ever said to me outside of ‘I miss you.’ The moments where I could see her through the white haze are small and fragmented like emerald, blue, and gold tesserae scattered in a field of prairie flowers. I dig through the red muck for them. I’ll clean the pieces off and plaster together a mosaic of her. It will always be an incomplete portrait, but maybe I have a chance of understanding why I could never make her proud. 
+ 	There are a few things I know for certain about her. Granny is eighty-four and has not retired. She will never retire, not even in her grave. She spends her time aiding various charities, tending to her nine grandchildren and business, and attending pickle-ball lessons with her friends. She will pay close attention to every habit, tic, and expression someone unknowingly gives her. She has refined this skill to work a room in her favor. 
+	I’ve seen her do it at holiday parties, cocktail hours, and weddings. She’d make some time to say hello and snap a photo of me, before she found her targets: the Tulsa oil tycoons, their real estate developer juniors, and the nouveau riche of the Great Plains. Granny would make the rounds; she’d greet each man with a smile. The handshake involved her allowing them to clasp her hand, but she would be the one to place her hand on their forearm. Sometimes it was a man with old money in his pocket, other times it was a lucky investment in Apple in ’78. They didn’t have to be handsome or socially proficient.  To Granny, they just had to be rich. Little did these men know, her emerald acrylics were being used to hook them in. The snares were hidden by her asking about their grandchildren, or how they were holding up with the loss of their alma mater football team. As the conversation floated between niceties and some gossip, she would yank on the hook, sinking it in. 
+	“I was just talking to Jake Foster over there, and he was telling me about how he heard that Gerald, junior not senior, decided that he’s going to donate 10k to Catholic Charities. I said, only 10k!” She joked. 
+	The man gave her a tight-lipped smile. “Are y’all close to your goal?” 
+	“Well, I pledged a pretty penny, so now we’re at about a million.” 
+	Granny wouldn’t break her gaze from the man as she said this. She would keep her shoulders square to him. She knew that he had made three times more than her in that year. The man would continue the conversation as normal, his mind spinning as he felt the room closing in on him. How could Jake Foster, Gerald Junior, and a woman each be donating more than him? 
+	With a sip of her glass, followed by an email from the rich man to his secretary after the cocktails were dried up, a woman’s hospital could be built. Next, it would be a school for homeless children. After that, a rehab center for the opioid epidemic. She could fundraise millions of dollars in seven minutes, by measuring dicks. 
+	It’s a gift of hers. I can only imagine what she used it for when she and Grandad were first building their business. They began it all out in the middle of nowhere off a junction of State Highway 8, 33, and US Highway 270. It was a little lo-cal that grew out of a tent city situated in the Cheyenne-Arapaho Reservation. The white settlers stole the land, and it transformed into an agricultural and dairy town that got hit hard by the Dust Bowl. By the time Granny arrived with Grandad, in the late 60s, it wasn’t much. They leased a place of business. It was nestled between a gristmill, the industrial jewel of the town, and a dilapidated motel. 
+	I went there for the first time in the summer: the place had no sidewalks, flooded when it rained an inch, and had one stop light that broke when it got too windy. It was so flat. Barren. I could see the heatwaves vibrating on the blue horizon. During the hour and a half drive back home, Dad told me almost everything he knew about their early days to pass the time. He said that Granny was the one who balanced the books. Her role was to rake through the nitty gritties of the operation for any hidden oversights. She also tended to a growing family, while Grandad expanded the business. 
+	“She doesn’t strike me as the homemaker type,” I said. 
+	Dad chuckled. “You know, I’m not surprised that you say that. She told me when you and your sister were born that she wasn’t going to be the ‘that’ type of grandmother,” he said. “She kind of let us do what we wanted, though. Let us figure it out for ourselves. I think it backfired on her sometimes though.”
+	“Why?”
+	“She was so busy that we would get into trouble.”
+	“Like when you set a carpet on fire?”
+	“Yeah, yeah,” he waved his hand. “I know your aunt likes to tell that one. Have ‘you’ heard about the time your aunt stole Grandad’s pipe and rode off with it on her bike down the highway? I bet not.” He replied, and paused, before continuing with, “I know that she can be hard to read, or please, but your Granny was ahead of her time. She really did pull herself up by her bootstraps.”
+	“Well, yeah, of course. She couldn’t even open a bank account on her own then, and still did it all.”
+	“Yes,” he said, as if he hadn’t thought about it. “But she didn’t come from much of anything too. All I really know is that she moved down here from Chicago with her family at a young age. They were the big Irish Catholic family. Money was tight. It was incredible she went to college. But she dropped out a few years before she helped start the business.”
+	“Oh,” I said. “What did she study?” 
+	“I think it was journalism,” he said. 
+	During this time of her life, in the old tent city, I imagine her sitting at the base of a mountain searching for possible routes up as she clawed through numbers and inventory. The frigid wind was harsh against her dark hair, not yet bleached blonde. She found her foothold. She climbed alone towards the top. I wondered what weight she had to cast aside to keep up the pace.
+	Once, at nineteen, I was at her home for a birthday party. It was spring. I remember watching the sunlight against my skin as I sat next to the wall of stained glass in her living room. I listened to the patter of cloudbursts ebb and flow against the panes. The room warmed with a swell of loud voices. I looked past the crowd of family members and watched Granny pour a heavy glass of red wine. She made the rounds afterward, sitting down and speaking to each child and grandchild until their turn was up. Granny walked as if she were floating. When she spoke to people, she would stand too close. Her hand rested on her hip as she sipped and gave them a practiced smile.
+	Granny set her glass on the coaster. Her posture was perfect as she sat in the lazy boy next to me. She wore white jeans, sandals, and a white blouse. 
+	Granny reached out and grabbed a few strands of my hair. “You got a haircut.”
+	“I did,” I said, surprised. I hadn’t seen her in a month. 
+	“You should grow it out more,” she said. “It’s something people envy about you.”
+	“I’ll trim it next time then.” 
+	There was a pause as she smiled, scanning me. “You look so much like your father.” She flicked her gaze to Dad, across the room, before returning it to me. “I thought you’d grow out of it by now.” Granny trailed off, looking past me, her mind darting along another web of thoughts before she abruptly said, “and I honestly thought your father would never amount to anything.” Granny pulled her hand away from my hair, folding her palms in her lap. “Your father surprised me though. He needed some help, but now look at him, Frankie is one of my favorites.” 
+	Her son was laughing loudly across the room with Mom. When Granny turned her attention back to me, she moved her cold hand to my shoulder. 
+	“Don’t you ever rely on me to get you somewhere. I can’t be the one to help you.” 
+	My heart stung; the residual burning bubbled in my chest. 
+	She shifted her hand to my arm, squeezing it. “I didn’t have much help either.” 
+	I met Granny’s eyes, unsure of what she wanted me to say. Her expression transported me back to a humid morning in July, five years earlier, when in a stroke of incredible luck, my house was hit by lightning seven times in one night. The final strike caused an explosion in our attic due to an ‘expertly’ placed pipe. The shockwave shook the foundation of the house. I sprung awake to a blare of alarms and black smoke and my heart pounding in my ears. Mom grabbed my wrist and we sprinted outside. Dad and my sister weren’t too far behind us. While my parents went back for our dogs, they sent my sister and I across the street to my aunt’s. We sat there and rang the doorbell over and over. I learned then my aunt was a heavy sleeper. We were soaked when one of my cousins let us in. My cousins, and eventually my aunt, helped us wash our muddy, bare, feet.  
+	I spent that day in my aunt’s kitchen. Granny arrived at the peak of the fire, when the dark haze of the smoke dampened the sunlight peeking through the curtains. She was wearing a long black coat, black shirt and trousers, and black rain boots. Granny stood in the doorway and surveyed my family rushing around the kitchen: Mom was on the phone with her mother and my aunt was trying her best to make scrambled eggs for all my cousins and I without any oil. My sister, along with my cousins, were organizing what the firemen were able to pull out of the blaze. My father sat next to the window, watching the fire. 
+	Granny crossed the kitchen to me, and without a word embraced me so tightly it knocked the wind out of me. Her clothes smelled of rose, vanilla, and tobacco. When she pulled away, she gripped me and met my eyes with that expression: Her face was relaxed, static, but her grey eyes were wide and scanning every inch of me. 
+	“Did you get burned?” 
+	I said I was okay. She peered past me. 
+	“And your sister?”
+	“She’s okay.”
+	Granny moved a strand of my hair, and muttered a ‘thank god,’ before saying, “then don’t make your father wait on you. Just look at him dearie. He’s a good man, a good father, but he needs your help even if it doesn’t look it.” She paused, measuring her words. “You can’t stand around.”
+	The house burned for fourteen more hours after Granny arrived. By the end of it, the house was a dripping charred heap, and what little survived smells like ash to this day. 
+	When Granny was gazing back at me in her living room, I felt the stinging sensation boil over from deep in my bones, spite. It traveled to the tip of my tongue. 
+	I moved my gaze away from Granny to the window. “I wasn’t counting on your help.”
+	The loud voices and the rain turned into a discordant choir. My stomach dropped and the visions of my empty grave in the red mud flooded back. 
+	“Good,” she said, lightly. 
+	I looked back at her. 
+	Granny was smiling as she asked, “have you worked on any writing ‘at all’ since we last talked? Or are you considering that law degree now?” She took a sip. 
+	Her words left the taste of blood in my mouth. I thought to myself, ‘No! Look at how much I’ve done!’ I knew holding up any ‘medals’ wouldn’t mean much, I had already tried that, so I didn’t peep a word. After my time was up with her, and she moved on, ‘How can she not see me?’ reverberated over and over. 
+	“You know,” Dad told me while driving home from that damn birthday party. I had mentioned what Granny said to me. “All she ever wanted was a red-headed grandchild, and twin grandchildren. She got both!” He was watching the road as he said this, flicking his attention to the rearview mirror to look at me. “Her older sisters were identical twins. She was so excited when she found out about you and your sister.”
+	“I wonder how the ROI is working out for her on that wish.”
+	He laughed, shrugging. “Who knows. But I think you should know that she made all her friends buy your book. She emailed me about it.”
+	“Hmm.” I crossed my arms. “She probably just wants me to write her biography.”
+	I shipped off to university in Scotland after that spring, and summer, rolled by. I was only there for about four months before the pandemic hit. I didn’t see Granny much during this time. I heard stories, though, of her and Grandad trying to continue working under looming circumstances. I remember getting a phone call from my mom, when I was in quarantine, and she informed me that my grandfather had broken his femur. She explained what happened, and I asked how Granny was doing. 
+	“She’s okay, your dad said she was in a Zoom meeting today. She said that your grandad was feeling good.” 
+	“She’s still working?”
+	“Oh yeah,” Mom said. “She’s always been like this though. It drives your father crazy.”
+	“Like what?”
+	“She kept trying to work when she was going through chemo, kept tryin’ after her mother died, and Frank just can’t get her to ever relax. But, you know, it’s what she wants and he’s not gonna be the one to stop her.”
+	While trying to take care of Grandad, and her work, she got sick. I had returned from my second online semester at university by the time she recovered. It was on the day after I arrived that there was a devastating ice storm in the city. The powerlines went down, and people didn’t have electricity for about two weeks. The state kept getting barreled by arctic blasts. On an especially cold morning, Dad knocked on my bedroom door. 
+	“Your mom and I are going to see Granny and Grandad. I think they would love to see you,” he said, and placed a covid test on my desk. 
+	I tested negative. We drove slowly to my dad’s childhood home. The roads were slick. The trees next to the road were drooping and some of their branches snapping under the weight of the ice. Dad parked the car as best he could and walked up the snowy driveway, careful on the steps Emma, and stood next to a patch of wilting flowers and dead grass as he knocked on the black door. My aunt answered it. While Dad went to go check on Grandad, my aunt explained to Mom and me that Granny decided to do some re-decorating. 
+	We cut through the kitchen. I noticed a pile of soaking plates and forks in the sink, a collection of coffee mugs, and stained pink wine glasses on the counter. The hallway leading to the living room had dust bunnies scurrying around my feet. The living room walls were bare, we found that every photo had been taken down and re-organized into stacks. My aunt explained that each stack correlated to a wall, and that Granny wanted them hung up in that new order. Granny, though, was nowhere to be found. She had gone to finish up her work for the day. 
+	Mom, my aunt, and I went to work to hang the photos. Halfway through the second stack, I pulled out a photo of Granny and Dad when he was my age. He was wearing a black bow tie and had no signs of grey hair; Granny beamed as she posed with him. 
+	My aunt looked over my shoulder. “Frankie always looked so much like her. The hair before she went blonde, the face, and his smile. He’s the only one of us that really looks like her child.” My aunt laughed a little. “That’s why he’s her favorite.” 
+	“I never noticed that before,” I said, eying the image of Granny. 
+	“How could you not? You look just like her too!” 
+	Mom and my aunt laughed and moved on, but I lingered on the photo. I stared until my eyes unfocused, and my reflection gazed back at me. As we sifted through the stacks, I asked Mom and my aunt about each one Granny was in. The ones in black and white showed her, her mother, and her deceased siblings all wearing matching outfits. Her high school photo had her staring off into the distance, a practiced soft smile as the centerpiece. The grainy, colored photos were a collage of her and Grandad when they were my age – a wedding, the first location, his first car, their first child. The next few were family photos with Granny getting older and her family gradually growing. The photos become saturated once I was born. All with awards, foundation openings, graduations, and weddings. 
+	I held the last photo in the stack. It was Granny and me. She was knelt next to me, her hands squeezing my shoulders with her smiling face squished against mine. I was standing stiffly in my white dobok, barefoot, with my hair braided into pigtails. I held the first-place medal up with a crooked smile. I still had a gap in my teeth then. I brushed my fingertips on the photo, remembering how cold Granny’s hands were in that humid warehouse. 
+	After we finished, Mom and my aunt asked me to take a glass of wine to Granny’s room. I took a breath outside her door and knocked. She told me to come in, in a rough voice, and when I opened the door, I found that her bed was filled with piles of papers. Granny was sitting at her desk by a large window. She was a silhouette until my vision adjusted. She turned to me, taking off her glasses, and clasped her hands in her lap, before giving me a smile that created crow’s feet in the corners of her eyes. The chair she sat in had a black frame and green details; the back towered over her. It made her look small. 
+	“Is that for me, or for you?”
+	I crossed the room, handing it to her. “For you.”
+ 	“Where’s your glass? Aren’t you twenty-one now? It doesn’t matter anyhow. You’re in college. You’re probably drinking plenty of wine.”
+	“No, not really.”
+	“Not a fan of red?”
+	“It’s not my favorite.”
+	“A shame.” She motioned for me to take a seat, her gold bracelets catching in the light. “Red wine warms the heart. It keeps it healthy. You’ve been eating healthy, haven’t you?”
+	“I’ve had plenty of fried fish, fried potatoes, and terrible nachos.”
+	She made a face before she smiled, “sounds like a balanced diet as long as you’re still pretty. Don’t drink too much of those pints, as they call it.” Granny took a sip. She placed the glass on a stack of handwritten notes. “Did you do well this semester? Did you have to wear masks to class?”
+	“It was good as it could be,” I said. “And yes, we did.”
+	“I’m guessing there were no parties then, right? Right. So, did you write another book? I mean you must have been; you look like you’re wearing a shade too light!” She smiled. “I’m kidding, dear, you have your father’s wonderful looks and tan skin… But you do remember what I said before you went off with those socialists?” 
+	“I’d never see the sun again.”
+	“Yes. You would have seen a little more light had you stayed in America and gone to Notre Dame. I’m not the one to judge, though, I haven’t seen the sun in ages either.” Granny crossed her leg, leaning back.” Is that why you’re here? Did you write another book for me to read while I’m trapped here?”
+	“I worked on a few things. They aren’t done yet though.”
+	“Why not?”
+	“It has to be perfect.”
+	“Oh.” She said, as if it were a challenge. “I hope it’s my biography.”
+	I smiled. “That would take me decades to write.” 
+	“No. No.” Granny waved her hand. “There wouldn’t be much to it, unless you fibbed… And you’re not a fibber, correct?” 
+	“I think there’s plenty I could write about without lying. Give your work some credit.”
+	Granny paused, before shrugging. “It had to be done.” She trailed off. “I doubt anyone would want to read about a rich old bat complain, not when I’ve been blessed with so much.” 
+	“I’d read that story.”
+	“You must like sob stories then. I’ve never been a fan.”
+	I paused. “Granny, can I ask you something?”
+	“Sure dearie.”
+	“Do you not think you deserve all this?”
+	She frowned, looking out the window at the snow and ice, as she hesitated. “I said the wrong thing. I haven’t been blessed one bit. Blessed means lucky. It means it’s been handed to you. You’ve been blessed. I made sure of that. We are related, but I’ve worked for everything I have. Blessing means it can never go away; everything I have could slip through my fingers if I didn’t pay attention.”
+	“You make it sound like it’s not worth it.”
+	Her eyes met mine, a calculated smile with dimples formed, as she traced her fingers over her thick brows. “It sounds like you are writing my biography.” Granny rested her angular face in her palm. “When’s it coming out?”
+	I gave her the same smile. “Whenever you want.”
+	There was a pause. Her full attention remained on me, as she said, “don’t ever do what I would have wanted. That’s not what I want.” Her expression became distant. “Find what you love. Love it even when your fingers bleed. That’s my gift to you. Don’t let it slip.” 
+	The clouds parted, the blizzard let up, and the sunlight came in. I could see the precipice from the bottom. The cold paused, it was my only chance, so I climbed: She was an aspiring entrepreneur at twenty-one, trying to lift herself from poverty; a younger sister at thirty at her brother’s funeral, adopting his child as her own; an unwilling matriarch at thirty-five, learning the news of her mother’s death in a house-fire caused by a cigarette; a mother at forty-two, sitting in the silence of her first office after being diagnosed with cancer; a grandmother who will not retire, not even in her grave, so that strangers will not go through the hardship she faced alone. Her coldness was care and attention, wasn’t it?
+ 	Granny will never see me through the haze, but that’s the weight she had to discard for me. She beat me to the top, where her hands were frost-bitten, and her eyes were strained from looking at the white vastness for so long. There was no way down for someone who could not see the bottom anymore. She had to press on. There was no time to wait for me. Her chest was heaving in the thin air.</p>
+    </div>
+
+    <script>
+        const correctPassword = "absolutely no carnations";
+        const passwordContainer = document.getElementById("password-container");
+        const textContainer = document.getElementById("text-container");
+        const title = document.getElementById("title");
+
+        function checkPassword() {
+            const userInput = document.getElementById("password-input").value.trim().toLowerCase();
+
+            if (userInput === correctPassword) {
+                passwordContainer.style.display = "none";
+                title.style.display = "block";
+                textContainer.style.display = "block";
+            } else {
+                shakePasswordPrompt();
+            }
+        }
+
+        function shakePasswordPrompt() {
+            passwordContainer.classList.add("shake");
+            setTimeout(() => {
+                passwordContainer.classList.remove("shake");
+            }, 500);
+        }
+    </script>
+</body>
+</html>
+
